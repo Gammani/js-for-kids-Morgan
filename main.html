@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="main.css"/>
 </head>
 <body>
+<h1 id="main-heading">Hello World!</h1>
+<button onclick="changeText()">изменить текст</button>
 
+<script>
+    let changeText = () => {
+        let headingElement = document.getElementById("main-heading");
+        headingElement.innerHTML = prompt("Введите новый заголовок");
+    }
+</script>
 </body>
 </html>
